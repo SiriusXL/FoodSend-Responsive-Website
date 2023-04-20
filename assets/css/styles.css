@@ -228,7 +228,7 @@ margin-bottom: var(--m-0-75);
 
 .neverfelt .leftsec{
   margin-top: var(--m-3);
-  width: 50%;
+  width: 40%;
 }
 
 .neverfelt .leftsec h4{
@@ -278,23 +278,23 @@ button:hover{
 } 
 
 .neverfelt .rightsec{
-  width: 50%;
+  width: 60%;
 }
 
 
 .mainb {
   margin-bottom: var(--m-2);
-  height: 30.875rem;
+  height: 80vh;
   background-image: url('../img/Untitled-1.png');
-  background-position: center;
+  background-position:center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
-
+/*
 .mainb img{
-height: 90%;
+height: 20%;
 }
-
+*/
 /*=============== SPECIAL ===============*/
 
 /*=============== JOIN ===============*/
@@ -485,13 +485,19 @@ margin-left: var(--m-0-75);
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 350px) {
+
 .flex-column{
  flex-direction: column;
 }
+
  .box{
   width: 100%;
   margin-bottom: 1rem;
  }
+
+.neverfelt{
+  margin-top: var(--m-0-5);
+}
 
 .neverfelt .leftsec-sm{
   width: 100%;
@@ -500,6 +506,7 @@ margin-left: var(--m-0-75);
 
 .neverfelt .leftsec h4{
   font-size: 1.5rem;
+  margin-top: var(--m-0-25);
 }
 
 .neverfelt .leftsec h5{
@@ -511,12 +518,25 @@ margin-left: var(--m-0-75);
   width: 100%;
 }
 
+
+button{
+  background-color: var(--second-color);
+    padding-top: var(--m-0-25);
+    padding-bottom: var(--m-0-25);
+    padding-right: var(--m-0-25);
+    padding-left: var(--m-0-25);
+    border: none;
+    color: var(--white-color);
+    cursor: pointer;
+    border-radius: var(--m-0-25);
+    font-size: var(--smaller-font-size);
+}
+
 .neverfelt .rightsec{
   width: 100%;
 }
 
 .mainb{
-  height: 100vh;
   margin-bottom: 0px;
 }
 
@@ -570,11 +590,133 @@ margin-left: var(--m-0-75);
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px) {
+@media screen and (max-width: 568px) {
+
+  .flex-column{
+    flex-direction: column;
+   }
+
+   .box{
+    width: 100%;
+    margin-bottom: 1rem;
+   }
+
+   .neverfelt{
+    margin-top: var(--m-0-5);
+  }
+
+   .neverfelt .leftsec-sm{
+    width: 100%;
+    margin-top: var(--m-1);
+    text-align: center;
+  }
+  
+  .neverfelt .leftsec p {
+    width: 100%;
+  }
+
+  .neverfelt .leftsec h4{
+    font-size: 1.5rem;
+    margin-top: var(--m-0-25);
+  }
+  
+  .neverfelt .leftsec h5{
+    font-size: 1rem;
+  }
+  
+  .neverfelt .leftsec p{
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  
+  
+  button{
+    background-color: var(--second-color);
+      padding-top: var(--m-0-25);
+      padding-bottom: var(--m-0-25);
+      padding-right: var(--m-0-25);
+      padding-left: var(--m-0-25);
+      border: none;
+      color: var(--white-color);
+      cursor: pointer;
+      border-radius: var(--m-0-25);
+      font-size: var(--smaller-font-size);
+  }
+  
+  .neverfelt .rightsec{
+    width: 100%;
+  }
+  
+  .mainb{
+    margin-bottom: 0px;
+
+  }
+  
+  .workbox{
+    width: 100%;
+  }
+  
+  .box-container{
+    width: 100%;
+  }
+  
+  .first-text{
+    margin-bottom: 2rem;
+  }
+  
+  .first-text h3{
+    font-size: 1.5rem;
+  }
+  
+  .order1{
+    width: 100%;
+  }
+  
+  /*
+  .order1 h3{
+    font-size:  1rem;
+  }
+  */
+  .footer{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  
+  .food, .about, .social{
+    width: 100%;
+  }
+  
+  .food p{
+    font-size: 0.7rem;
+  }
+  
+  .about ul {
+    text-align: left;
+  }
+  
+  .alltint{
+    margin-left: 0;
+    justify-content: center;
+  }
+
+
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+
+  button {
+    padding-top: var(--m-0-5);
+    padding-bottom: var(--m-0-5);
+    padding-right: var(--m-0-5);
+    padding-left: var(--m-0-25);
+    border: none;
+    color: var(--white-color);
+    cursor: pointer;
+    border-radius: var(--m-0-25);
+    font-size: var(--smaller-font-size);
 }
+  }
+  
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
